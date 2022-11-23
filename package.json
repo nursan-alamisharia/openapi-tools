@@ -1,0 +1,19 @@
+{
+  "name": "openapi-tools",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsoa spec && redocly build-docs ./build/swagger.json",
+    "start": "prism-cli.exe mock -d ./build/swagger.json",
+    "start:proxy": "prism-cli.exe proxy ./build/swagger.json http://localhost:3000"
+  },
+  "dependencies": {
+    "@redocly/cli": "^1.0.0-beta.114",
+    "@stoplight/prism-cli": "^4.10.5",
+    "tsoa": "^4.1.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "typescript": "^4.9.3"
+  }
+}

@@ -1,0 +1,27 @@
+{
+    "entryFile": "src/app.ts",
+    "noImplicitAdditionalProperties": "throw-on-extras",
+    "controllerPathGlobs": [
+        "src/controllers/**"
+    ],
+    "spec": {
+        "outputDirectory": "build",
+        "specVersion": 3,
+        "description": "API For User Pet list",
+        "contact": {
+            "email": "hello@nursanamar.com",
+            "name": "Nursan amar",
+            "url": "nursanamar.com"
+        },
+        "securityDefinitions": {
+            "JWT": {
+                "type": "http",
+                "scheme": "bearer",
+                "bearerFormat": "JWT"
+            }
+        }
+    },
+    "routes": {
+        "routesDir": "build"
+    }
+}
