@@ -5,7 +5,7 @@
   "scripts": {
     "build": "tsoa spec && redocly build-docs ./build/swagger.json",
     "start": "prism-cli.exe mock -d ./build/swagger.json",
-    "start:proxy": "prism-cli.exe proxy ./build/swagger.json http://localhost:3000"
+    "start:proxy": "prism-cli.exe proxy ./build/swagger.json"
   },
   "dependencies": {
     "@redocly/cli": "^1.0.0-beta.114",
