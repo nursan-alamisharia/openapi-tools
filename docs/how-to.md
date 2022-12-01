@@ -16,12 +16,12 @@ The way we define our API using TSOA is by making a controller file (controller 
 
 To start creating a definition for an API, create a controller file in `src\controllers`,  you can follow this [guide](https://tsoa-community.github.io/docs/getting-started.html#defining-our-first-model) or look at the example controller in `src\controllers\example.ts`
 
-After making the controller run command `yarn build` to generate the OpenAPI Document and API Documentation. the OpenAPI Document will be saved in `build` directory and API documentation will be saved as `redoc-static.html ` in the root directory.
+After making the controller run command `yarn build` to generate the OpenAPI Document and the API Documentation. the OpenAPI Document will be saved in `build` directory and the API documentation will be saved as `redoc-static.html ` in the root directory.
 
 For a more advance definition see [TSOA documentation](https://tsoa-community.github.io/docs/introduction.html).
 
 ### Mock Server
-After generating OpenAPI Document we can use it as input to run the mock server, to start the mock server use this command:
+After generating an OpenAPI Document we can use it as input to run the mock server, to start the mock server use this command:
 ```
 yarn start
 ```
