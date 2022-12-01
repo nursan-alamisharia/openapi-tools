@@ -1,8 +1,3 @@
-/**
- * @isInt
- */
-export type Integer = number;
-
 export interface PaginatedData<T> {
     /**
      * @minLength 1

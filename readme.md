@@ -1,8 +1,15 @@
 # OpenAPI Tools
 
-## Overview
 A compilation of tools to write, create a mock server, and generate documentation for OpenAPI Documents.
 
+## Table Of Contents
+- [Overview](#overview)
+- [Motivation](/docs/motivation.md)
+- [How To]()
+
+
+---
+## Overview
 This tool consists of 3 main parts:
 - Generate OpenAPI Documents.
 - Mock Server from The Generated OpenAPI Documents.
@@ -32,6 +39,8 @@ Prism not only can be used as a mock but also as a validation proxy to validate 
 When in a proxy mode Prism will sit between the client and the server, client request will be sent to the Prism server and then will be forwarded to the real server just like what a proxy server would be. Any request to an endpoint that has not yet been implemented in the real server Prism will respond with mocked data to the client. 
 
 To learn more check [Prism documentation](https://docs.stoplight.io/docs/prism).
+
+***Note: This repo uses a custom-built binary of Prism cli because there is a [bug](https://github.com/stoplightio/prism/issues/1895) in the official version***
 
 ### Generating API Documentation
 To generate documentation we will be using Redocly, It will create beautiful and easy-to-read documentation from OpenAPI Document, we only need an OpenAPI Document file as input and then it will produce an HTML Page.
