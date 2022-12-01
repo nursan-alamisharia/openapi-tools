@@ -5,7 +5,7 @@ A compilation of tools to write, create a mock server, and generate documentatio
 ## Table Of Contents
 - [Overview](#overview)
 - [Motivation](/docs/motivation.md)
-- [How To]()
+- [How To](/docs/how-to.md)
 
 
 ---
